@@ -22,3 +22,7 @@ jobs:
         uses: hiberbee/github-action-skaffold@1.24.0
         with:
           command: build
+      - name: Run Skaffold render file
+        uses: hiberbee/github-action-skaffold@1.24.0
+        with:
+          command: render

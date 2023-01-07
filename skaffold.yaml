@@ -3,6 +3,9 @@ kind: Config
 metadata:
   name: vue-laravel-k8s
 build:
+  tagPolicy:
+    gitCommit:
+      ignoreChanges: true
   artifacts:
   - image: puzon103/laravel
     docker:
