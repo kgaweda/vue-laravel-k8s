@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Run Skaffold build
-        uses: hiberbee/github-action-skaffold@1.19.0
+        uses: hiberbee/github-action-skaffold@1.24.0
         with:
           command: build
           repository: ghcr.io/${{ github.repository }}
