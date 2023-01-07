@@ -1,5 +1,9 @@
 FROM php:8.1.13-apache-bullseye
 
+RUN apt-get update && apt-get install git -y zip libzip-dev
+
+RUN docker-php-ext-install zip
+
 WORKDIR /var/www
 
 COPY --from=composer:2.2.18 /usr/bin/composer /usr/bin/composer
