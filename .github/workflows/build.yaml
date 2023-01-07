@@ -6,8 +6,8 @@ on:
 
 jobs:
   pipeline:
-    name: Skaffold Pipeline
-    runs-on: ubuntu-20.04
+    name: Build Docker image
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout sources
         uses: actions/checkout@v3
