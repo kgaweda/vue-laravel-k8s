@@ -1,7 +1,7 @@
 apiVersion: skaffold/v4beta1
 kind: Config
 metadata:
-  name: laravel
+  name: vue-laravel-k8s
 build:
   artifacts:
   - image: puzon103/laravel
