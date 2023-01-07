@@ -1,0 +1,10 @@
+build:
+
+LARAVEL
+
+docker build -t puzon103/laravel . 
+
+
+VUE
+
+docker build -t puzon103/vue .
