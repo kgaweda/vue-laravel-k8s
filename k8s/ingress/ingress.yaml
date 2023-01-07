@@ -1,0 +1,27 @@
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: vue-laravel-k8s-ingress
+spec:
+  rules:
+  - host: vue-laravel.alfabeta.site
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: vue-k8s-service
+            port:
+              number: 80
+      - path: /api
+        pathType: Prefix
+        backend:
+          service:
+            name: laravel-k8s-service
+            port:
+              number: 80
+
+
+

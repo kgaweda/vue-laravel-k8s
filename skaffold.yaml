@@ -1,0 +1,16 @@
+apiVersion: skaffold/v4beta1
+kind: Config
+metadata:
+  name: laravel
+build:
+  artifacts:
+  - image: puzon103/laravel
+    docker:
+      dockerfile: laravel/Dockerfile
+  - image: puzon103/vue
+    docker:
+      dockerfile: vue/Dockerfile
+manifests:
+  kustomize:
+    paths:
+      - "k8s"

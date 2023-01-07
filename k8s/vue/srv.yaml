@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: vue-k8s-service
+  labels:
+    app: vue-laravel-k8s
+spec:
+  # type: LoadBalancer
+  selector:
+    app: vue-app
+  ports:
+  - port: 80
+    name: vue
+    targetPort: 80

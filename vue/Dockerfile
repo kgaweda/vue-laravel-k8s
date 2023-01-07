@@ -1,9 +1,9 @@
 # build stage
 FROM node:19.4.0-alpine as build-stage
 WORKDIR /app
-COPY package*.json ./
+COPY ./vue/package*.json ./
 RUN npm install
-COPY . .
+COPY ./vue .
 RUN npm run build
 
 # production stage
