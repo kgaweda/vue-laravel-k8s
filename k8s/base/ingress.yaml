@@ -3,6 +3,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: vue-laravel-k8s-ingress
+  namespace: vue-laravel-k8s
 spec:
   rules:
   - host: vue-laravel.alfabeta.site

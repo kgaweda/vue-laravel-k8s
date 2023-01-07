@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: vue-laravel-k8s
   name: laravel-k8s-service
   labels:
     app: vue-laravel-k8s

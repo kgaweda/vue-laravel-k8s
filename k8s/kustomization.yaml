@@ -3,5 +3,5 @@ kind: Kustomization
 
 resources:
   - "laravel"
-  - "ingress"
+  - "base"
   - "vue"

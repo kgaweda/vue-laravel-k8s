@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: vue-laravel-k8s
   name: laravel-deployment
   labels:
     app: vue-laravel-k8s
